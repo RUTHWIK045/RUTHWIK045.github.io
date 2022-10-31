@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --red:#E50914;
+    --black:#000000;
+    --light-color:#181818;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+body{
+    background-color:var(--light-color);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top:5.5rem;
+}
+
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background:var(--light-color);
+}
+
+
+
+header{
+    top: 0;
+    left:0;
+    right:0;
+    padding: 1rem 7%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+}
+
+.heading{
+    text-align: center;
+    color: var(--red);
+    margin-bottom: 3rem;
+    font-size:4rem;
+}
+
+.btn{
+    margin-top:1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--red);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    align-items: center;
+}
+
+.btn:hover{
+    background: var(--black);
+    color: var(--red);
+    letter-spacing: .1rem;
+}
+
+header .logo{
+    color: #fff;;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color: var(--red);
+
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--red);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #fff;
+    border-radius: 50%;
+    background:var(--red);
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: var(--red);
+    background: #fff;
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+
+.home{
+    padding:0;
+}
+
+.home .box{
+    min-height: 100vh;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content:flex-end;
+    padding:2rem 9%;
+}
+
+.home .box{
+    justify-content: flex-start;
+}
+
+.home .box.second{
+    justify-content: flex-end;
+}
+
+.home .box .content{
+    width:50rem;
+}
+
+.home .box .content h3{
+    font-size: 6rem;
+    color: #fff;
+    padding-top: .5rem;
+    text-transform: uppercase;
+}
+
+.home .box .content p{
+    line-height: 2;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.anime{
+    padding:1rem;
+    height:400px;
+}
+.anime .a{
+    align-items: center;
+}
+.anime .box{
+    width: 299px;
+    height:168px;
+}
+
+.anime .content h3{
+    font-size: 1.7rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+}
+
+.anime .content P{
+    font-size: 1.2rem;
+    color:#fff;
+    text-decoration: none;
+
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;   
+}
+
+.copyright .logo{
+    color: var(--red);
+    font-size: 2.1rem;
+    font-weight: bolder;
+}
+
+.copyright p{
+    font-size: 0.9rem;
+    color: var(--red);
+    font-size:2rem;
+}
+
