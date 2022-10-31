@@ -197,14 +197,9 @@ header .icons #menu-bars{
 
 .copyright{
     display: flex;
-    justify-content: space-between;
-    padding: 20px;   
-}
-
-.copyright .logo{
-    color: var(--red);
-    font-size: 2.1rem;
-    font-weight: bolder;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;    
 }
 
 .copyright p{
